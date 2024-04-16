@@ -4,10 +4,10 @@ velovert_url="www.veloverte.org"
 terreverte_url="www.terreverte.net"
 wwwvelovertpath="/var/www/html/www.velovert.org"
 wwwterrevertepath="/var/www/html/www.terreverte.net"
-veloverthtml=$wwwvelovertpath/index.html
-terrevertehtml=$wwwterrevertepath/index.html
-velovertconf=/etc/httpd/conf.d/velovert.org.conf
-terreverteconf=/etc/httpd/conf.d/terreverte.net.conf
+veloverthtml="$wwwvelovertpath/index.html"
+terrevertehtml="$wwwterrevertepath/index.html"
+velovertconf="/etc/httpd/conf.d/velovert.org.conf"
+terreverteconf="/etc/httpd/conf.d/terreverte.net.conf"
 
 if [ ! rpm -q httpd &> /dev/null ]; then
   echo "Apache is not installed. Installing..."
@@ -58,7 +58,7 @@ cat << EOF >> $veloverthtml
     </div>
 </body>
 </html>
-EOF
+EOF 
 
 # Append the configuration to terreverte file
 touch $terrevertehtml
