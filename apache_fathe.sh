@@ -1,6 +1,6 @@
 #!/bin/bash
 #creating the variables
-velovert_url="www.veloverte.org"
+velovert_url="www.velovert.org"
 terreverte_url="www.terreverte.net"
 wwwvelovertpath="/var/www/html/www.velovert.org"
 wwwterrevertepath="/var/www/html/www.terreverte.net"
