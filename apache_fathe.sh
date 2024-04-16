@@ -58,7 +58,7 @@ cat << EOF >> $veloverthtml
     </div>
 </body>
 </html>
-EOF 
+EOF
 
 # Append the configuration to terreverte file
 touch $terrevertehtml
